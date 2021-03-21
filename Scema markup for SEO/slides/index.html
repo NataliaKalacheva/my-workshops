@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@shower/material/styles/styles.css"
+    />
+    <style>
+      .shower {
+        --slide-ratio: calc(16 / 9);
+      }
+    </style>
+  </head>
+  <body class="shower list">
+    <header class="caption">
+      <h1>Basic Schema Markup / Structured data</h1>
+      <p>by Kalacheva Natalia</p>
+    </header>
+
+    <section class="slide">
+      <h2>Schema Markup, alse called Structured data</h2>
+      <p>
+        it is code that you place on your website to help search engines return
+        more meaningful results to users. Schematic markup allows you to create
+        rich descriptions that appear in search results.
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Rich snippets, alse called Rich Results</h2>
+      <p>
+        Rich Snippets are normal Google search results with additional data
+        displayed. This extra data is usually pulled from Structured Data found
+        in a page's HTML. Common Rich Snippet types include reviews, recipes and
+        events.
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Examples</h2>
+      <img width="49%" src="pictures/example1.png" alt="Rich results 1" />
+      <img width="49%" src="pictures/example2.png" alt="Rich results 2" />
+    </section>
+
+    <section class="slide">
+      <h2>How to implement? / Microdata</h2>
+      <p>
+        With microdata, you can specify structured data information in the HTML
+        itself using the attributes of HTML tags.
+        <br />
+        + easy to add manually
+        <br />
+        - it is difficult to scale and automate when needed for larger websites
+        (eg e-commerce).
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>How to implement? / RDFa</h2>
+      <p>
+        RDFa is similar to Microdata, which means it’s also added through HTML
+        tag attributes. The difference is that RDFa is older and more complex.
+        It has other uses outside of the HTML realm and this means integration
+        with other apps/platforms/servers is easier if they use the technology.
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>How to implement? / JSON-LD</h2>
+      <p>
+        JSON-LD (JavaScript Object Notation for Linked Data) is a technique for
+        encoding and representing information about structured data using JSON.
+        This is recommended by the W3C and Google, which means it is
+        standardized.
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Testing tools</h2>
+      <ul>
+        <li>
+          <a href="https://search.google.com/test/rich-results" target="_blank"
+            >Rich Results Test</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://search.google.com/structured-data/testing-tool/u/0/"
+            target="_blank"
+            >Structured data testing tool</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <div class="progress"></div>
+
+    <script src="node_modules/@shower/core/dist/shower.js"></script>
+  </body>
+</html>
