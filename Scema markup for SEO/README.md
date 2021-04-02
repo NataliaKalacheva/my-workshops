@@ -19,8 +19,8 @@ events.
 Examples
 --------
 
-![Rich results 1](slides/pictures/example1.png) ![Rich results
-2](slides/pictures/example2.png)
+![Rich results 1](pictures/example1.png) ![Rich results
+2](pictures/example2.png)
 
 How to implement? / Microdata
 -----------------------------
@@ -31,6 +31,16 @@ itself using the attributes of HTML tags. \
  - it is difficult to scale and automate when needed for larger websites
 (eg e-commerce).
 
+![Schema markup](pictures/schema-markup-screenshot.png)
+
+By adding **itemscope**, you are specifying that the HTML contained in
+the block is about a particular item.
+
+By adding **itemtype**, you are specifying specifying what kind of an
+item it is.
+
+To label properties of an item, use the **itemprop** attribute.
+
 How to implement? / RDFa
 ------------------------
 
@@ -38,6 +48,8 @@ RDFa is similar to Microdata, which means it’s also added through HTML
 tag attributes. The difference is that RDFa is older and more complex.
 It has other uses outside of the HTML realm and this means integration
 with other apps/platforms/servers is easier if they use the technology.
+
+![Schema markup](pictures/rdfa-code-example.jpeg)
 
 How to implement? / JSON-LD
 ---------------------------
@@ -47,10 +59,18 @@ encoding and representing information about structured data using JSON.
 This is recommended by the W3C and Google, which means it is
 standardized.
 
+![Schema markup](pictures/example-of-json-ld.jpeg)
+
 Testing tools
 -------------
 
--   [Rich Results Test](https://search.google.com/test/rich-results)
--   [Structured data testing
-    tool](https://search.google.com/structured-data/testing-tool/u/0/)
+[Rich Results Test](https://search.google.com/test/rich-results)
+
+[Structured data testing
+tool](https://search.google.com/structured-data/testing-tool/u/0/)
+
+Documentation
+-------------
+
+-   [https://schema.org/Thing](https://schema.org/Organization)
 
